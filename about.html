@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>about me</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logopng.png"> </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li> <a href="about.html" id="about" onclick="goToAbout()">ABOUT</a></li>
+                        <li> <a href="">DUMP</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <main>
+                <div class="about-me-text">
+                    <h1>Who is Emre?</h1>
+                    <p>
+                        Emre Uslu is a 18 years old Applied Mathematics <br>
+                        student at Yıldız Technical University who <br>
+                        graduated from Enka Technical High School <br>
+                        Industrial Automation Technologies Department. <br>
+                    </p>
+                    <div class="okullar">
+                        
+                            <div class="enka" id="enkaLink" onclick="goToEnka()">
+                                <img src="images/enka.jpg" >
+                                    <div class="layer">
+                                        
+                                    <h3>ENKA</h3>
+                                    </div>
+                            </div>
+                            <div class="ytu" id="ytuLink" onclick="goToYtu()">
+                                <img src="images/ytu169.jpg" >
+                                    <div class="layer">
+                                        
+                                    <h3>YTU</h3>
+                                    </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </main>
+            
+        </section>
+
+        
+        
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+            function goToEnka(){
+                window.open('https://www.enka.k12.tr/kocaeli/');
+            }
+            function goToYtu(){
+                window.open('https://yildiz.edu.tr/');
+            }
+        </script>
+    </body>
+</html>
