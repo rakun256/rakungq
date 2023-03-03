@@ -46,7 +46,7 @@ nav img:hover{
     content: '';
     width: 0% ;
     height: 2px;
-    background: #0b044d;
+    background: #1900ff;
     display: block;
     margin: auto;
     transition: 0.5s;
