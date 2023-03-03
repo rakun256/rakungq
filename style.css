@@ -46,7 +46,7 @@ nav img:hover{
     content: '';
     width: 0% ;
     height: 2px;
-    background: #2b2b2b;
+    background: #0b044d;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -84,7 +84,7 @@ nav .fa{
     }
     .nav-links{
         position:absolute;
-        background: #2b2b2b;
+        background: #0b044d;
         height: 100vh;
         width: 200px;
         top: 0;
